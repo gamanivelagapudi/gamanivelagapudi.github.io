@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "MemphisRiver";
+    src: url(fonts/MemphisRiver.ttf) format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    background: #fddaf9;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+body{
+    background: #fddaf9;
+
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(235, 105, 252);
+}
+
+.info{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.info h1{
+    font-size: 50px;
+    color: #212121;
+    /* margin-bottom: 20px; */
+}
+
+span{
+    color: rgb(255, 101, 247);
+    font-family: "MemphisRiver", sans-serif;
+
+}
+bla{
+    /* color: rgb(255, 101, 247); */
+    font-family: "MemphisRiver", sans-serif;
+    font-size: 8vh;
+}
+
+.info p{
+    color: #555;
+    line-height: 22px;
+}
+
+.info a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.info a:hover{
+    background: #050505d2;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fdc2fc;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.info p{
+    width: 45vw;
+}
+
+button{
+    padding: 0.8em 0em;
+    width:350px;
+    background: #000000;
+    border-radius:15px;
+    border:0;
+    color:#fff;
+    font-size:1.2em;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight:bold;
+    cursor:pointer;
+    margin:1em 0em;
+    text-transform:uppercase;
+}
+.light{
+    background: -moz-linear-gradient(-45deg,  #000000 0%, #000000 40%, #ffffff 50%, #000000 60%, #000000 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#0000), color-stop(40%,#000000), color-stop(50%,#ffffff), color-stop(60%,#0000), color-stop(100%,#0000));
+    background: -webkit-linear-gradient(-45deg,  #000000 0%,#000000 40%,#ffffff 50%,#000000 60%,#000000 100%);
+    background: -o-linear-gradient(-45deg,  #000000 0%,#000000 40%,#ffffff 50%,#000000 60%,#000000 100%);
+    background: -ms-linear-gradient(-45deg,  #000000 0%,#000000 40%,#ffffff 50%,#000000 60%,#000000 100%);
+    background: linear-gradient(135deg,  #000000 0%,#000000 40%,#ffffff 50%,#000000 60%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6e00', endColorstr='#ff6e00',GradientType=1 );
+    background-repeat: no-repeat;  
+    background-position:0px;
+    background-size:300%;  
+}
+
+.light:hover{
+    animation:light 1s;
+    -webkit-animation:light 1s;
+    
+}
+
+@keyframes light {
+    0% {
+        background-position:-600px; 
+    }
+    100% { 
+        background-position:0px; 
+    }
+}
+        
+@-webkit-keyframes light {
+    0% {
+        background-position:-600px; 
+    }
+    100% { 
+        background-position:0px; 
+    }
+}
+    
+    
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .me{
+    left: 45%;
+}
+
+.social{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social a{
+    font-size: 30px;
+    color: #212121;
+    margin-right: 20px;
+}
+
+.social a:hover{
+    color: rgb(235, 105, 252);
+}
+
+.class{
+    font-size: 40px;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.leFlyInBottom span { animation-name: leFlyInBottom }
+@keyframes leFlyInBottom {
+    0% {
+        transform: translate(0px, 80px);
+        opacity: 0
+    }
+    50% {
+        transform: translate(10px, -50px);
+        animation-timing-function: ease-in-out
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .info p{
+        width:90vw
+    }
+    .images
+    {
+        width: 0vw;
+        height: 0vh;
+    }
+}
